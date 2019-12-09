@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "webpack"
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -16,6 +17,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "devDependencies": {
+    "path": "^0.12.7",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
