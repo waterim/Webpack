@@ -16,22 +16,30 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron text-center">
+      <div class="jumbotron text-center mt-5">
         <h1 class="display-5 text-center text-dark">
           Convertor between Celsius, Kelvin and Fahrenheit
         </h1>
         <p class="lead">Input temperature in one of measurements above</p>
         <hr />
-        <label for="Celc">Celsius</label>
-        <input id="Celc" type="number" placeholder="Celsius../>
-        <label for="Fahr">Fahrenheit</label>
-        <input id="Fahr" type="number" placeholder="Fahrenheit.."  />
-        <label for="Kelv">Kelvin</label>
-        <input id="Kelv" type="number" placeholder="Kelvin.."/>
+        <input name="inputTemp" type="number" id="tempToConvert"><br><br>
+        <hr>
+        <button id= "btnConvertToCels">Convert to Celsius</button>
+        <button id= "btnConvertToFahr"s>Convert to Fahrenheit</button>
+        <div id="tempConversionOutput"></div>
+        <hr/>
+      </div>
+      <div class="jumbotron text-center mt-5">
+        <h1 class="display-5 text-center text-dark">
+          Convertor between Kilometres and Miles
+        </h1>
+        <p class="lead">Input distance in one of measurements above</p>
         <hr />
-        <div class="d-flex justify-content-end">
-          <button class="btn btn-outline-danger btn-lg" onclick="location.href='/Users/waterim/WebstormProjects/tin_10/Index.html'">Distance conv.</button>
-        </div>
+        <input name="inputDist" type="number" id="distToConvert"><br><br>
+        <hr />
+        <button id="btnConvertToMiles">Convert to Miles</button>
+        <button id="btnConvertToKm">Convert to Kilometers</button>
+        <div id="distConversionOutput"></div>
       </div>
     </div>
     <script src="/dist/main.js"></script>
